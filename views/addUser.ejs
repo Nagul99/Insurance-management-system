@@ -1,0 +1,22 @@
+<% include partials/agentHeader%>
+
+<div class="container" style="padding-top:80px;">
+    <div class="row">
+        <h1 style="text-align:center; color:black; font-weight:600">Sign up</h1>
+        <div style="width:30% ;margin:25px auto">
+
+
+
+            <form action="/addUser" method="POST">
+                <div class="form-group"><input class="form-control" type="text" name="agentname" id="agentname" placeholder="AgentName">
+                </div>
+                <div class="form-group"><input class="form-control" type="text" name="username" id="username"
+                        placeholder="Username"></div>
+                <div class="form-group"><input class="form-control" type="password" name="password" id="password"
+                        placeholder="Password"></div>
+                <div class="form-group"><button class="btn btn-lg btn-danger btn-block"
+                        style="background-color:red;">Add!</button></div>
+            </form>
+
+
+            <% include partials/footer%>

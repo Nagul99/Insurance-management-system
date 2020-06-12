@@ -1,0 +1,29 @@
+<% include partials/userHeader%>
+
+<div class="container">
+<header class="jumbotron">
+<h1>Welcome to Uttara Insurance</h1>
+<p>View Our Plans</p>
+<a class="btn btn-primary btn-lg" href="/form">Choose a Policy</a>
+</header>
+<div class="row" style="display:flex; flex-wrap:wrap">
+<%members.forEach(function(book){%>
+   <div style="width:25%;height:20%;padding: 10px;">
+   <h6><%=book.name%></h6>
+   <h6><%=book.mailid%></h6>
+   <h6><%=book.phoneno%></h6>
+   <h6><%=book.plan%></h6> 
+   <%if(book.plan === "Basic"){%>
+   <button class="btn btn-primary btn-sm">Pay Rs.3000</button>
+   <%}else if(book.plan === "Premium"){%>
+   <button class="btn btn-primary btn-sm">Pay Rs.6000</button>
+   <%}else if(book.plan === "Family"){%>
+   <button class="btn btn-primary btn-sm">Pay Rs.8000</button>
+   <%}else if(book.plan === "Supreme"){%>
+   <button class="btn btn-primary btn-sm">Pay Rs.10000</button>
+   <%}%>
+   </div>
+   <%})%>
+   
+
+<% include partials/footer%>

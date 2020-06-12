@@ -1,0 +1,39 @@
+<% include partials/header2%>
+
+    <div id="faq" style="height:80px"></div>
+    <div style="height: 750px;">
+        <h1 style="text-align:center;">Contact Us</h1>
+        <div class="underline"></div>
+        <br>
+        <div class="faq-container" style="font-family:Livvic">
+            <p style="font-family: 'Livvic', sans-serif;font-size: 25px;text-align:center;">
+                Official Mobile number : 9751469384<br><br> Official Email id : uttarainsurance@gmail.com<br><br> Address : 43, 11th Avenue, Ashok Nagar, Chennai - 600083. <br><br>
+            </p>
+
+        </div>
+    </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/public/js/slick.js"></script>
+    <script type="text/javascript">
+        {
+            $(document).ready(function() {
+                $('.thing').slick({
+                    dots: true,
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+            });
+            var nav = document.getElementById("nav");
+            nav.style.backgroundColor = "transparent";
+        }
+    </script>
+
+    <% include partials/footer%>

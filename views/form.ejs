@@ -1,0 +1,24 @@
+<% include partials/userHeader%>
+    <div>
+        <div class="container">
+            <div style="width:30%; padding-top:100px; float: left;">
+                <h1>Choose Policy</h1>
+                <form action="/booker" method="POST">
+                    <div class="form-group"> <input class="form-control" type="text" placeholder="Name" name="name"></div>
+                    <div class="form-group"> <input class="form-control" type="text" placeholder="Mail-Id" name="mailid"></div>
+                    <div class="form-group"> <input class="form-control" type="text" placeholder="Phone no" name="phoneno"></div>
+                    <div class="form-group"> <input class="form-control" type="text" placeholder="Policy Type" name="plan"></div>
+                    <div class="form-group"> <input class="form-control" type="text" placeholder="User Name" name="user"></div>
+                    <div class="form-group"> <input class="btn btn-lg btn-primary btn-block" style="padding:0px 12px;" type="submit"></div>
+                </form>
+                <a href="/booker">Back</a>
+            </div>
+            <div style="width:70%; padding-top:180px; float: right; padding-left: 40px;">
+                <h5>Basic Scheme - <strong> Rs.2000/Month</strong></h5>
+                <h5>Premium Scheme - <strong>Rs.4000/Month</strong></h5>
+                <h5>Family Scheme - <strong>Rs.8000/Month</strong></h5>
+                <h5>Supreme Scheme - <strong>Rs.10000/Month</strong></h5>
+            </div>
+        </div>
+    </div>
+    <% include partials/footer%>

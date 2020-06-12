@@ -1,0 +1,15 @@
+<% include partials/header%>
+
+<div class="container" style="padding-top:80px;">
+    <div class="row">
+    <h1 style="text-align:center; color:black; font-weight:600">Food</h1>    
+<div style="width:30% ;margin:25px auto">
+
+
+<form action="/food" method="POST">
+     <div class="form-group"><input class="form-control" type="text" name="food" placeholder="What do you want to eat?"></div>
+    <div class="form-group"><input class="form-control" type="number" name="nos" placeholder="Quantity"></div>
+     <div class="form-group"><button class="btn btn-lg btn-danger btn-block" style="background-color:red;">Login</button></div>
+</form>
+
+<% include partials/footer%>

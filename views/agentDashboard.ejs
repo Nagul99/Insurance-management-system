@@ -1,0 +1,57 @@
+<% include partials/agentHeader%>
+<div class="thing" style="width:100%; padding:none; margin:none;">
+    <div style="position: relative;text-align: center;color: red;">
+        <img style="width: 100%; height: 700px; padding: none; margin: none;"
+            src="https://cdn.pixabay.com/photo/2015/09/20/18/31/coins-948603_1280.jpg">
+        <div style="position: absolute;top: 90%;left: 50%;transform: translate(-50%, -50%);"><strong>
+                <h1 style="font-family: 'Baloo Chettan', cursive;">General Insurance</h1>
+            </strong></div>
+    </div>
+    <div style="position: relative;text-align: center;color: red;">
+        <img style="width: 100%; height: 700px; padding: none; margin: none;"
+            src="https://image.freepik.com/free-photo/paper-cut-family-green-grass-concepts-saving-money-house-car_36597-36.jpg">
+        <div style="position: absolute;top: 90%;left: 50%;transform: translate(-50%, -50%);"><strong>
+                <h1 style="font-family: 'Baloo Chettan', cursive;">Life Insurance</h1>
+            </strong></div>
+    </div>
+    <div style="position: relative;text-align: center;color: red;">
+        <img style="width: 100%; height: 700px; padding: none; margin: none;"
+            src="https://image.freepik.com/free-vector/group-medical-staff-carrying-health-related-icons_53876-43071.jpg">
+        <div style="position: absolute;top: 90%;left: 50%;transform: translate(-50%, -50%);"><strong>
+                <h1 style="font-family: 'Baloo Chettan', cursive;">Health Insurance</h1>
+            </strong></div>
+    </div>
+    <div style="position: relative;text-align: center;color: red;">
+        <img style="width: 100%; height: 700px; padding: none; margin: none;"
+            src="https://cdn.pixabay.com/photo/2018/07/30/10/08/installment-3572185_1280.jpg">
+        <div style="position: absolute;top: 90%;left: 50%;transform: translate(-50%, -50%);"><strong>
+                <h1 style="font-family: 'Baloo Chettan', cursive;">Car Insurance</h1>
+            </strong></div>
+    </div>
+</div>
+<div class="container">
+    <h1>Your Commission till now is <%=count*3000%></h1>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/public/js/slick.js"></script>
+<script type="text/javascript">
+    {
+        $(document).ready(function () {
+            $('.thing').slick({
+                dots: true,
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+        var nav = document.getElementById("nav");
+        nav.style.backgroundColor = "transparent";
+    }    
+</script>
+
+<% include partials/footer%>

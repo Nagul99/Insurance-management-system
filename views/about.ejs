@@ -1,0 +1,54 @@
+<% include partials/header2%>
+    <div class="container">
+        <div id="about"></div>
+        <h1 style="text-align: center;">About Us</h1>
+        <div class="underline"></div>
+    </div>
+    <div style="width: 67%;margin: auto;">
+        <p style="font-family: 'Livvic', sans-serif;font-size: 25px;text-align:center;">
+            <span style="font-family: 'Livvic';font-size: 35px;">Uttara Insurance</span> is a company established to provide insurance solutions with various types of policies. <span style="font-family: 'Livvic';font-size: 35px;font-weight: 450;">Uttara Insurance</span>            is focused on providing insurance solutions in various fields with austerity and equity.We are humbled by the magnitude of the responsibility we carry and realise the lives that are associated with us are very valuable indeed. <span style="font-family: 'Livvic';font-size: 35px;">Uttara Insurance</span>            provides insurance solutions in various fields aimed at building a better future for our customers.We provide the highest margin of policies in various fields. <span style="font-family: 'Livvic';font-size: 35px;">BE SURE , NOT JUST INSURED!!</span>
+        </p>
+
+    </div>
+
+    <div style="height:50px"></div>
+    <div>
+        <div>
+            <h1 style="font-family: 'Livvic';font-weight: 400;text-align: center;">What is General Insurance?</h1>
+            <p style="margin:auto;width:50%;"><span style="font-family: 'Livvic';font-size: 25px;width: 50%;margin:auto">General insurance or non-life insurance policies, including automobile and homeowners policies, provide payments depending on the loss from a particular financial event. General insurance is typically defined as any insurance that is not determined to be life insurance. It is called property and casualty insurance.</span></p>
+        </div>
+        <div>
+            <h1 style="font-family: 'Livvic';font-weight: 400;text-align: center;">What is Life insurance?</h1>
+            <p style="margin:auto;width:50%;"><span style="font-family: 'Livvic';font-size: 25px;width: 50%;margin:auto">Life insurance is a contract that pledges payment of an amount to the person assured (or his nominee) on the happening of the event insured against.The contract is valid for payment of the insured amount during: The date of maturity, or Specified dates at periodic intervals, or Unfortunate death.</span></p>
+        </div>
+        <div>
+            <h1 style="font-family: 'Livvic';font-weight: 400;text-align: center;">What is Vehicle insurance?</h1>
+            <p style="margin:auto;width:50%;"><span style="font-family: 'Livvic';font-size: 25px;width: 50%;margin:auto">Vehicle insurance (also known as car insurance, motor insurance, or auto insurance) is insurance for cars, trucks, motorcycles, and other road vehicles. Its primary use is to provide financial protection against physical damage or bodily injury resulting from traffic collisions and against liability that could also arise from incidents in a vehicle.</span></p>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/public/js/slick.js"></script>
+    <script type="text/javascript">
+        {
+            $(document).ready(function() {
+                $('.thing').slick({
+                    dots: true,
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+            });
+            var nav = document.getElementById("nav");
+            nav.style.backgroundColor = "transparent";
+        }
+    </script>
+
+    <% include partials/footer%>
