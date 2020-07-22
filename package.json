@@ -17,7 +17,7 @@
     "flash": "^1.1.0",
     "live-server": "^1.2.0",
     "mongodb": "^3.1.6",
-    "mongoose": "^5.3.0",
+    "mongoose": "^5.7.5",
     "passport": "^0.4.0",
     "passport-http": "^0.3.0",
     "passport-local": "^1.0.0",
